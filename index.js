@@ -5,7 +5,7 @@ const home = require("./routes/home");
 const app = express();
 app.use(express.json());
 
-app.use("/home", home);
+app.use("/", home);
 
 const port = 9001;
 app.listen(port, ()=> console.log("server is running"));
